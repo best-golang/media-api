@@ -28,3 +28,9 @@ func (handler *SqlHandler) Create(entity *interface{}) (database.Result, error) 
 	err := handler.Conn.Create(entity).Error
 	return entity, err
 }
+
+func (handler *SqlHandler) Find(id int) (database.Result, error) {
+
+}
+
+func (handler *SqlHandler) Where()
