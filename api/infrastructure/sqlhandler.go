@@ -28,3 +28,8 @@ func (handler *SqlHandler) Create(entity *interface{}) (*interface{}, error) {
 	err := handler.Conn.Create(entity).Error
 	return entity, err
 }
+
+func (handler *SqlHandler) Index(entities *interface{}) error {
+	err := handler.Conn.Find(entities).Error
+	return err
+}

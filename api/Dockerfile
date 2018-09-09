@@ -6,7 +6,6 @@ RUN apt-get update -qq && \
 
 RUN mkdir -p /go/src/api
 ADD . /go/src/api
+RUN rm -rf /go/src/api/.vendor-new
 
 WORKDIR /go/src/api
-
-RUN dep ensure

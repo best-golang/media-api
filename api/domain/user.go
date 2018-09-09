@@ -11,3 +11,5 @@ type User struct {
 	ResetPasswordToken string `gorm:"unique_index" json:"reset_password_token,omitempty"`
 	Role               int    `gorm:"not null" json:"role,omitempty"` // role 0: user, 1: author, 2: admin
 }
+
+type Users []User

@@ -18,5 +18,6 @@ func init() {
 
 	// Define routes
 	router.POST("/users", func(c *gin.Context) { userController.Create(c) })
+	router.GET("/users", func(c *gin.Context) { userController.Index(c) })
 	Router = router
 }

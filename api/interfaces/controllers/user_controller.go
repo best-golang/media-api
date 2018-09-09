@@ -29,3 +29,12 @@ func (controller *UserController) Create(c Context) {
 	}
 	c.Status(201)
 }
+
+func (controller *UserController) Index(c Context) {
+	var u *domain.Users
+	if err := controller.Usecase.Index(u); err != nil {
+		c.JSON(500, NewError(err))
+		return
+	}
+	c.JSON(200, u)
+}
