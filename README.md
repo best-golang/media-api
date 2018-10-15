@@ -1,10 +1,9 @@
 # Shokubunka media project
 
 ## Overview
-This repository store the code of Shokubunka media application.
+This is media api sample written in go.
 
 Use
-Javascript (React, Node.js)
 Golang (gin)
 Docker
 
@@ -14,8 +13,7 @@ Docker
 [Docker for Mac](https://store.docker.com/editions/community/docker-ce-desktop-mac)
 
 ### 2 Clone frontend
-clone git@github.com:hungryresearchers/shokubunka-media-client.git
-to your project root path
+Under development
 
 ### 3 Build image
 Run next command
